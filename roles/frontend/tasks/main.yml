@@ -3,7 +3,8 @@
   ansible.builtin.yum:
     name: nginx
     state: installed
-    
+    become: yes
+
 
 #- name: Download frontend httdocs
 #  ansible.builtin.get_url:
