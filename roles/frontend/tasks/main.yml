@@ -1,11 +1,12 @@
+
 - name: Installing nginx
   ansible.builtin.yum:
     name: nginx
     state: installed
-    become: yes
+    
 
-- name: Download frontend httdocs
-  ansible.builtin.get_url:
-    url: https://github.com/roboshop-devops-project/frontend/archive/main.zip
-    dest: /tmp
-    become: yes
+#- name: Download frontend httdocs
+#  ansible.builtin.get_url:
+#    url: https://github.com/roboshop-devops-project/frontend/archive/main.zip
+#    dest: /tmp
+#    become: yes
