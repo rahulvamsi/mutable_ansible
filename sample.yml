@@ -1,0 +1,4 @@
+- name: testing
+  hosts: all
+  roles:
+    - frontend
